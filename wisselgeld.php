@@ -20,6 +20,7 @@ define(
 
 foreach(geldEenheid as $coin => $type){
     $coin = (float) $coin;
+    $wsgeld = round($wsgeld, 2);
 
     if(floor($wsgeld / $coin) > 0){
         $times = floor($wsgeld / $coin);
